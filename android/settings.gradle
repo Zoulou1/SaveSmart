@@ -1,0 +1,42 @@
+// --- REQUIRED PLUGIN MANAGEMENT (ABSOLUTELY MUST BE FIRST LOGICAL BLOCK) ---
+pluginManagement {
+    // Resolve Flutter SDK path from local.properties
+    def flutterSdkPath = {
+        def props = new Properties()
+        def propsFile = new File(rootDir, "local.properties")
+        if (propsFile.exists()) {
+            propsFile.withReader('UTF-8') { reader -> props.load(reader) }
+        }
+        return props.getProperty('flutter.sdk')
+    }()
+
+    // Important: allow Gradle to find Flutter's plugin loader via included build
+    if (flutterSdkPath != null) {
+        includeBuild("${flutterSdkPath}/packages/flutter_tools/gradle")
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    id "com.android.application" version "8.6.1" apply false
+    id "org.jetbrains.kotlin.android" version "2.1.0" apply false
+}
+
+// Make repositories available for all modules' dependency resolution
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        // Flutter artifacts (embedding, platform binaries)
+        maven { url = uri("https://storage.googleapis.com/download.flutter.io") }
+    }
+}
+
+include(":app")
