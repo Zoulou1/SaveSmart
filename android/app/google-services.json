@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "18943098158",
+    "project_id": "savesmart-63f96",
+    "storage_bucket": "savesmart-63f96.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18943098158:android:0f86ab8009b24360304ebf",
+        "android_client_info": {
+          "package_name": "com.example.savesmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsCwfuL3AJbkH06C50yZlP-xwg_L2cxZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
