@@ -1,18 +1,26 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.savesmart">
 =======
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 >>>>>>> 48d7ddd2bf5e624bb98b0d4686f363710290e385
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+>>>>>>> 8ebb916ef1cef77b81440b031d7fd4a37ffb66dd
     <application
         android:label="savesmart"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:name="com.example.savesmart.MainActivity"
 =======
             android:name=".MainActivity"
 >>>>>>> 48d7ddd2bf5e624bb98b0d4686f363710290e385
+=======
+            android:name=".MainActivity"
+>>>>>>> 8ebb916ef1cef77b81440b031d7fd4a37ffb66dd
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""

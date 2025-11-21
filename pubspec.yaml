@@ -1,4 +1,5 @@
 name: savesmart
+<<<<<<< HEAD
 description: "A new Flutter project."
 <<<<<<< HEAD
 publish_to: 'none'
@@ -46,10 +47,45 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
 >>>>>>> 48d7ddd2bf5e624bb98b0d4686f363710290e385
   cupertino_icons: ^1.0.8
+=======
+description: A digital piggy bank app for young adults to manage savings and track expenses
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_bloc: ^9.1.1       # UPGRADED from 8.1.3
+  equatable: ^2.0.5
+  
+  # Firebase - MAJOR VERSION UPGRADE TO FIX WEB ERROR
+  firebase_core: ^4.2.1       # UPGRADED from 2.24.2
+  firebase_auth: ^6.1.2       # UPGRADED from 4.16.0
+  cloud_firestore: ^6.1.0     # UPGRADED from 4.14.0
+  google_sign_in: ^7.2.0      # UPGRADED from 6.2.1
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  fl_chart: ^1.1.1          # UPGRADED from 0.66.0
+  intl: ^0.20.2             # UPGRADED from 0.18.1
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  
+  # Utilities
+  uuid: ^4.3.3
+>>>>>>> 8ebb916ef1cef77b81440b031d7fd4a37ffb66dd
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
 <<<<<<< HEAD
   flutter_lints: ^5.0.0
 
@@ -106,3 +142,14 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 >>>>>>> 48d7ddd2bf5e624bb98b0d4686f363710290e385
+=======
+  flutter_lints: ^6.0.0     # UPGRADED from 3.0.0
+  mockito: ^5.4.4
+  bloc_test: ^10.0.0        # UPGRADED from 9.1.5
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+>>>>>>> 8ebb916ef1cef77b81440b031d7fd4a37ffb66dd
